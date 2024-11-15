@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: 'Felix Titling', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #161616;
+    padding: 5px 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: left;
+    gap: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(230, 10, 10);
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.9s ease;
+}
+
+.navbar a:hover {
+    background: #000000;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('imagen1.jpg') no-repeat center center/cover;
+    text-align: center;
+    height: 300px;
+    padding: 60px 20px;
+}
+
+.hero .section-title {
+    font-size: 2.5rem;
+    color: rgb(151, 5, 5);
+    font-family: Felix Titling,  sans-serif;
+    margin-bottom: 1px;
+    margin: 5px 0;
+    position: left;
+    animation: slideIn 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(189, 15, 15, 0.7);
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+
+
+.hero-description {
+    font-size: 15px;
+    color: rgb(180, 29, 29);
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn-transparente {
+    text-decoration: none;
+    color: rgb(209, 12, 12);
+    border: 2px solid rgb(190, 25, 25);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .btn-transparente:hover {
+    background: rgb(180, 17, 17);
+    color: #961221;
+}
+
+/* Servicios Section */
+.servicios {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    background: #000000;
+}
+
+.service {
+    flex: 1 1 calc(33% - 20px);
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(190, 22, 22);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c21313;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #ca1616;
+}
+
+
+/* Botón Enviar */
+.btn-submit {
+    background-color: #28a745; /* Verde */
+    height: 30px;
+    width: 90px;
+    color: rgb(199, 20, 20);
+}
+
+.btn-submit:hover {
+    background-color: #218838; /* Verde más oscuro */
+    transform: scale(1.05); /* Agranda ligeramente */
+}
+
+/* Botón Borrar */
+.btn-reset {
+    background-color: #dc3545; /* Rojo */
+    height: 30px;
+    width: 90px;
+    color: rgb(204, 24, 24);
+    margin-left: 10px; /* Espaciado entre botones */
+}
+
+.btn-reset:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+    transform: scale(1.05); /* Agranda ligeramente */
+}
+/* Botón Enviar */
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #a10c0c;
+    color: #cf1414;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Sección del logo */
+
+/* Sección de Acerca de Nosotros */
+.about-section {
+    flex: 2;
+    text-align: left;
+}
+
+.about-section h3 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #000000;
+}
+
+.about-section p {
+    margin: 5px 0;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.about-section a {
+    color: #c42626;
+    text-decoration: none;
+}
+
+/* Sección de Redes Sociales */
+.social-section {
+    flex: 1;
+    text-align: center;
+}
+
+.social-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 0px 10px;
+    border: 1px solid #000000;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background: #000000;
+    color: #111;
+}
+
+.facebook::before {
+    content: " " ;
+    background-image: url('facebook.jpg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;  /* Ajusta el tamaño según lo necesario */
+    height: 17px; /* Ajusta el tamaño según lo necesario */
+    display: inline-block;
+}
+
+.instagram::before {
+    content: "";
+    background-image: url('Instagram.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.tiktok::before {
+    content: "";
+    background-image: url('tiktok.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.twitter::before {
+    content: "";
+    background-image: url('x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
